@@ -1,0 +1,11 @@
+google-play-scraper
+pandas
+transformers
+torch  # For transformers
+spacy
+scikit-learn
+psycopg2-binary
+matplotlib
+seaborn
+wordcloud
+pytest
