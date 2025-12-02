@@ -4,6 +4,7 @@ import pandas as pd
 conn = psycopg2.connect("dbname=bank_reviews user=postgres password=Happy host=localhost")
 cur = conn.cursor()
 
+
 # Insert banks
 banks = [('CBE', 'Commercial Bank of Ethiopia Mobile'), ('BOA', 'Bank of Abyssinia Mobile'), ('Dashen', 'Dashen Bank Mobile')]
 cur.executemany("INSERT INTO banks (bank_name, app_name) VALUES (%s, %s)", banks)
